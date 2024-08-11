@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ClickPuli
 {
@@ -164,6 +165,12 @@ namespace ClickPuli
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
             addIn.UpdateLimitChars();
+        }
+
+        private void btnAbout_Click(object sender, RibbonControlEventArgs e)
+        {
+            var addIn = Globals.ThisAddIn;
+            addIn.aboutForm.ShowDialog();
         }
     }
 }

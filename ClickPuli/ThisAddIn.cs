@@ -17,6 +17,7 @@ namespace ClickPuli
         const double lookBehindLimit = 100;
         static List<string> defaultLimitChars = new List<string>() { " ", ",", ";", "\n", "\t", "¶", "(", ")", "[", "]", "{", "}", ".", Environment.NewLine };
         public List<string> limitChars = new List<string>(defaultLimitChars);
+        public FrmAbout aboutForm = new FrmAbout();
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {

@@ -54,6 +54,7 @@
             this.grpMisc = this.Factory.CreateRibbonGroup();
             this.cbIncludeTrailingSpace = this.Factory.CreateRibbonCheckBox();
             this.cbAutoCopy = this.Factory.CreateRibbonCheckBox();
+            this.btnAbout = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.grpStopOnCharacter.SuspendLayout();
             this.grpMisc.SuspendLayout();
@@ -181,6 +182,7 @@
             // 
             this.grpMisc.Items.Add(this.cbIncludeTrailingSpace);
             this.grpMisc.Items.Add(this.cbAutoCopy);
+            this.grpMisc.Items.Add(this.btnAbout);
             this.grpMisc.Label = "Misc";
             this.grpMisc.Name = "grpMisc";
             // 
@@ -195,6 +197,14 @@
             this.cbAutoCopy.Label = "auto-copy";
             this.cbAutoCopy.Name = "cbAutoCopy";
             this.cbAutoCopy.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.cbAutoCopy_Click);
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Image = global::ClickPuli.Properties.Resources.info;
+            this.btnAbout.Label = "About";
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.ShowImage = true;
+            this.btnAbout.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnAbout_Click);
             // 
             // Ribbon1
             // 
@@ -234,6 +244,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox cbStopOnHyphen;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox cbStopOnPeriod;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox cbStopOnQuestionMark;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnAbout;
     }
 
     partial class ThisRibbonCollection

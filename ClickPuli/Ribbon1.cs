@@ -13,171 +13,171 @@ namespace ClickPuli
         {
             // Update the UI and the internal vars based on the stored settings.
             var addIn = Globals.ThisAddIn;
-            cbStopOnUnderscore.Checked = Settings1.Default.stopOnUnderscore;
-            addIn.updateUnderscoreLimitChar();
-            cbStopOnPeriod.Checked = Settings1.Default.stopOnPeriod;
-            addIn.updatePeriodLimitChar();
-            cbStopOnComma.Checked = Settings1.Default.stopOnComma;
-            addIn.updateCommaLimitChar();
-            cbStopOnSemicolon.Checked = Settings1.Default.stopOnSemicolon;
-            addIn.updateSemicolonLimitChar();
-            cbStopOnExclamationMark.Checked = Settings1.Default.stopOnExclamationMark;
-            addIn.updateExclamationMarkLimitChar();
-            cbStopOnQuestionMark.Checked = Settings1.Default.stopOnQuestionMark;
-            addIn.updateQuestionMarkLimitChar();
-            cbStopOnHash.Checked = Settings1.Default.stopOnHash;
-            addIn.updateHashLimitChar();
-            cbStopOnParentheses.Checked = Settings1.Default.stopOnParentheses;
-            addIn.updateParenthesisLimitChar();
-            cbStopOnSquareBrackets.Checked = Settings1.Default.stopOnSquareBrackets;
-            addIn.updateSquareBracketsLimitChar();
-            cbStopOnBraces.Checked = Settings1.Default.stopOnBraces;
-            addIn.updateBracesLimitChar();
-            cbStopOnChevrons.Checked = Settings1.Default.stopOnChevrons;
-            addIn.updateChevronsLimitChar();
-            cbStopOnQuotes.Checked = Settings1.Default.stopOnQuotes;
-            addIn.updateQuotesLimitChar();
-            cbStopOnDoubleQuotes.Checked = Settings1.Default.stopOnDoubleQuotes;
-            addIn.updateDoubleQuotesLimitChar();
-            cbStopOnHyphen.Checked = Settings1.Default.stopOnHyphen;
-            addIn.updateHyphenLimitChar();
-            cbStopOnColon.Checked = Settings1.Default.stopOnColon;
-            addIn.updateColonLimitChar();
+            cbSelectUnderscore.Checked = Settings1.Default.SelectUnderscore;
+            addIn.UpdateUnderscoreLimitChar();
+            cbSelectPeriod.Checked = Settings1.Default.SelectPeriod;
+            addIn.UpdatePeriodLimitChar();
+            cbSelectComma.Checked = Settings1.Default.SelectComma;
+            addIn.UpdateCommaLimitChar();
+            cbSelectSemicolon.Checked = Settings1.Default.SelectSemicolon;
+            addIn.UpdateSemicolonLimitChar();
+            cbSelectExclamationMark.Checked = Settings1.Default.SelectExclamationMark;
+            addIn.UpdateExclamationMarkLimitChar();
+            cbSelectQuestionMark.Checked = Settings1.Default.SelectQuestionMark;
+            addIn.UpdateQuestionMarkLimitChar();
+            cbSelectHash.Checked = Settings1.Default.SelectHash;
+            addIn.UpdateHashLimitChar();
+            cbSelectParentheses.Checked = Settings1.Default.SelectParentheses;
+            addIn.UpdateParenthesisLimitChar();
+            cbSelectSquareBrackets.Checked = Settings1.Default.SelectSquareBrackets;
+            addIn.UpdateSquareBracketsLimitChar();
+            cbSelectBraces.Checked = Settings1.Default.SelectBraces;
+            addIn.UpdateBracesLimitChar();
+            cbSelectChevrons.Checked = Settings1.Default.SelectChevrons;
+            addIn.UpdateChevronsLimitChar();
+            cbSelectQuotes.Checked = Settings1.Default.SelectQuotes;
+            addIn.UpdateQuotesLimitChar();
+            cbSelectDoubleQuotes.Checked = Settings1.Default.SelectDoubleQuotes;
+            addIn.UpdateDoubleQuotesLimitChar();
+            cbSelectHyphen.Checked = Settings1.Default.SelectHyphen;
+            addIn.UpdateHyphenLimitChar();
+            cbSelectColon.Checked = Settings1.Default.SelectColon;
+            addIn.UpdateColonLimitChar();
 
-            cbIncludeTrailingSpace.Checked = Settings1.Default.includeTrailingSpace;
-            cbAutoCopy.Checked = Settings1.Default.autoCopy;
+            cbIncludeTrailingSpace.Checked = Settings1.Default.IncludeTrailingSpace;
+            cbAutoCopy.Checked = Settings1.Default.AutoCopy;
         }
 
         private void cbIncludeTrailingSpace_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.includeTrailingSpace = cbIncludeTrailingSpace.Checked;
+            Settings1.Default.IncludeTrailingSpace = cbIncludeTrailingSpace.Checked;
             Settings1.Default.Save();
         }
 
         private void cbAutoCopy_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.autoCopy = cbAutoCopy.Checked;
+            Settings1.Default.AutoCopy = cbAutoCopy.Checked;
             Settings1.Default.Save();
         }
 
-        private void cbStopOnUnderscore_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectUnderscore_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnUnderscore = cbStopOnUnderscore.Checked;
+            Settings1.Default.SelectUnderscore = cbSelectUnderscore.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateUnderscoreLimitChar();
+            addIn.UpdateUnderscoreLimitChar();
         }
 
-        private void cbStopOnColon_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectColon_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnColon = cbStopOnColon.Checked;
+            Settings1.Default.SelectColon = cbSelectColon.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateColonLimitChar();
+            addIn.UpdateColonLimitChar();
         }
 
-        private void cbStopOnComma_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectComma_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnComma = cbStopOnComma.Checked;
+            Settings1.Default.SelectComma = cbSelectComma.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateCommaLimitChar();
+            addIn.UpdateCommaLimitChar();
         }
 
-        private void cbStopOnSemicolon_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectSemicolon_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnSemicolon = cbStopOnSemicolon.Checked;
+            Settings1.Default.SelectSemicolon = cbSelectSemicolon.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateSemicolonLimitChar();
+            addIn.UpdateSemicolonLimitChar();
         }
 
-        private void cbStopOnExclamationMark_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectExclamationMark_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnExclamationMark = cbStopOnExclamationMark.Checked;
+            Settings1.Default.SelectExclamationMark = cbSelectExclamationMark.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateExclamationMarkLimitChar();
+            addIn.UpdateExclamationMarkLimitChar();
         }
 
-        private void cbStopOnHash_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectHash_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnHash = cbStopOnHash.Checked;
+            Settings1.Default.SelectHash = cbSelectHash.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateHashLimitChar();
+            addIn.UpdateHashLimitChar();
         }
 
-        private void cbStopOnParentheses_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectParentheses_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnParentheses = cbStopOnParentheses.Checked;
+            Settings1.Default.SelectParentheses = cbSelectParentheses.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateParenthesisLimitChar();
+            addIn.UpdateParenthesisLimitChar();
         }
 
-        private void cbStopOnSquareBrackets_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectSquareBrackets_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnSquareBrackets = cbStopOnSquareBrackets.Checked;
+            Settings1.Default.SelectSquareBrackets = cbSelectSquareBrackets.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateSquareBracketsLimitChar();
+            addIn.UpdateSquareBracketsLimitChar();
         }
 
-        private void cbStopOnBraces_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectBraces_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnBraces = cbStopOnBraces.Checked;
+            Settings1.Default.SelectBraces = cbSelectBraces.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateBracesLimitChar();
+            addIn.UpdateBracesLimitChar();
         }
 
-        private void cbStopOnChevrons_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectChevrons_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnChevrons = cbStopOnChevrons.Checked;
+            Settings1.Default.SelectChevrons = cbSelectChevrons.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateChevronsLimitChar();
+            addIn.UpdateChevronsLimitChar();
         }
 
-        private void cbStopOnQuotes_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectQuotes_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnQuotes = cbStopOnQuotes.Checked;
+            Settings1.Default.SelectQuotes = cbSelectQuotes.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateQuotesLimitChar();
+            addIn.UpdateQuotesLimitChar();
         }
 
-        private void cbStopOnDoubleQuotes_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectDoubleQuotes_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnDoubleQuotes = cbStopOnDoubleQuotes.Checked;
+            Settings1.Default.SelectDoubleQuotes = cbSelectDoubleQuotes.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateDoubleQuotesLimitChar();
+            addIn.UpdateDoubleQuotesLimitChar();
         }
 
-        private void cbStopOnHyphen_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectHyphen_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnHyphen = cbStopOnHyphen.Checked;
+            Settings1.Default.SelectHyphen = cbSelectHyphen.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateHyphenLimitChar();
+            addIn.UpdateHyphenLimitChar();
         }
 
-        private void cbStopOnPeriod_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectPeriod_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnPeriod = cbStopOnPeriod.Checked;
+            Settings1.Default.SelectPeriod = cbSelectPeriod.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updatePeriodLimitChar();
+            addIn.UpdatePeriodLimitChar();
         }
 
-        private void cbStopOnQuestionMark_Click(object sender, RibbonControlEventArgs e)
+        private void cbSelectQuestionMark_Click(object sender, RibbonControlEventArgs e)
         {
-            Settings1.Default.stopOnQuestionMark = cbStopOnQuestionMark.Checked;
+            Settings1.Default.SelectQuestionMark = cbSelectQuestionMark.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.updateQuestionMarkLimitChar();
+            addIn.UpdateQuestionMarkLimitChar();
         }
 
         private void btnAbout_Click(object sender, RibbonControlEventArgs e)

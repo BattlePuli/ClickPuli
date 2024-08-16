@@ -47,208 +47,211 @@ namespace ClickPuli
             selection.MoveStartUntil(limitCharsString, -lookBehindLimit);
             selection.MoveEndUntil(limitCharsString, lookAheadLimit);
 
-            if (Settings1.Default.includeTrailingSpace)
+            if (Settings1.Default.IncludeTrailingSpace)
             {
                 selection.MoveEndWhile(" ", 1);
             }
 
-            if (Settings1.Default.autoCopy)
+            if (Settings1.Default.AutoCopy)
             {
                 selection.Copy();
             }
         }
 
-        public void updateUnderscoreLimitChar()
+        public void UpdateUnderscoreLimitChar()
         {
-            if (Settings1.Default.stopOnUnderscore)
-            {
-                AddLimitChar("_");
-            }
-            else
+            if (Settings1.Default.SelectUnderscore)
             {
                 limitChars.Remove("_");
             }
+            else
+            {
+                AddLimitChar("_");
+            }
         }
 
-        public void updateColonLimitChar()
+        public void UpdateColonLimitChar()
         {
-            if (Settings1.Default.stopOnColon)
-            {
-                AddLimitChar(":");
-            }
-            else
+            if (Settings1.Default.SelectColon)
             {
                 limitChars.Remove(":");
             }
+            else
+            {
+                AddLimitChar(":");
+            }
         }
 
-        public void updateSemicolonLimitChar()
+        public void UpdateSemicolonLimitChar()
         {
-            if (Settings1.Default.stopOnSemicolon)
-            {
-                AddLimitChar(";");
-            }
-            else
+            if (Settings1.Default.SelectSemicolon)
             {
                 limitChars.Remove(";");
             }
+            else
+            {
+                AddLimitChar(";");
+            }
         }
 
-        public void updatePeriodLimitChar()
+        public void UpdatePeriodLimitChar()
         {
-            if (Settings1.Default.stopOnPeriod)
+            if (Settings1.Default.SelectPeriod)
+            {
+                limitChars.Remove(".");
+                
+            }
+            else
             {
                 AddLimitChar(".");
             }
-            else
-            {
-                limitChars.Remove(".");
-            }
         }
 
-        public void updateCommaLimitChar()
+        public void UpdateCommaLimitChar()
         {
-            if (Settings1.Default.stopOnComma)
+            if (Settings1.Default.SelectComma)
+            {
+                limitChars.Remove(",");                
+            }
+            else
             {
                 AddLimitChar(",");
             }
-            else
-            {
-                limitChars.Remove(",");
-            }
         }
 
-        public void updateExclamationMarkLimitChar()
+        public void UpdateExclamationMarkLimitChar()
         {
-            if (Settings1.Default.stopOnExclamationMark)
+            if (Settings1.Default.SelectExclamationMark)
+            {
+                limitChars.Remove("!");                
+            }
+            else
             {
                 AddLimitChar("!");
             }
-            else
-            {
-                limitChars.Remove("!");
-            }
         }
 
-        public void updateQuestionMarkLimitChar()
+        public void UpdateQuestionMarkLimitChar()
         {
-            if (Settings1.Default.stopOnQuestionMark)
+            if (Settings1.Default.SelectQuestionMark)
+            {
+                limitChars.Remove("?");                
+            }
+            else
             {
                 AddLimitChar("?");
             }
-            else
-            {
-                limitChars.Remove("?");
-            }
         }
 
-        public void updateHyphenLimitChar()
+        public void UpdateHyphenLimitChar()
         {
-            if (Settings1.Default.stopOnHyphen)
-            {
-                AddLimitChar("-");
-            }
-            else
+            if (Settings1.Default.SelectHyphen)
             {
                 limitChars.Remove("-");
             }
+            else
+            {
+                AddLimitChar("-");
+            }
         }
 
-        public void updateQuotesLimitChar()
+        public void UpdateQuotesLimitChar()
         {
-            if (Settings1.Default.stopOnQuotes)
+            if (Settings1.Default.SelectQuotes)
+            {                
+                limitChars.Remove("\'");
+                limitChars.Remove("’");
+
+            }
+            else
             {
                 AddLimitChar("\'");
                 AddLimitChar("’");
             }
-            else
-            {
-                limitChars.Remove("\'");
-                limitChars.Remove("’");
-            }
         }
 
-        public void updateDoubleQuotesLimitChar()
+        public void UpdateDoubleQuotesLimitChar()
         {
-            if (Settings1.Default.stopOnDoubleQuotes)
+            if (Settings1.Default.SelectDoubleQuotes)
+            {
+                limitChars.Remove("\"");
+                limitChars.Remove("“");
+                limitChars.Remove("”");
+
+            }
+            else
             {
                 AddLimitChar("\"");
                 AddLimitChar("“");
                 AddLimitChar("”");
             }
-            else
-            {
-                limitChars.Remove("\"");
-                limitChars.Remove("“");
-                limitChars.Remove("”");
-            }
         }
 
-        public void updateParenthesisLimitChar()
+        public void UpdateParenthesisLimitChar()
         {
-            if (Settings1.Default.stopOnParentheses)
+            if (Settings1.Default.SelectParentheses)
+            {                
+                limitChars.Remove("(");
+                limitChars.Remove(")");
+            }
+            else
             {
                 AddLimitChar("(");
                 AddLimitChar(")");
             }
-            else
-            {
-                limitChars.Remove("(");
-                limitChars.Remove(")");
-            }
         }
 
-        public void updateSquareBracketsLimitChar()
+        public void UpdateSquareBracketsLimitChar()
         {
-            if (Settings1.Default.stopOnSquareBrackets)
+            if (Settings1.Default.SelectSquareBrackets)
+            {                
+                limitChars.Remove("[");
+                limitChars.Remove("]");
+            }
+            else
             {
                 AddLimitChar("[");
                 AddLimitChar("]");
             }
-            else
-            {
-                limitChars.Remove("[");
-                limitChars.Remove("]");
-            }
         }
 
-        public void updateBracesLimitChar()
+        public void UpdateBracesLimitChar()
         {
-            if (Settings1.Default.stopOnBraces)
+            if (Settings1.Default.SelectBraces)
+            {                
+                limitChars.Remove("{");
+                limitChars.Remove("}");
+            }
+            else
             {
                 AddLimitChar("{");
                 AddLimitChar("}");
             }
-            else
-            {
-                limitChars.Remove("{");
-                limitChars.Remove("}");
-            }
         }
 
-        public void updateChevronsLimitChar()
+        public void UpdateChevronsLimitChar()
         {
-            if (Settings1.Default.stopOnChevrons)
+            if (Settings1.Default.SelectChevrons)
+            {                
+                limitChars.Remove("<");
+                limitChars.Remove(">");
+            }
+            else
             {
                 AddLimitChar("<");
                 AddLimitChar(">");
             }
-            else
-            {
-                limitChars.Remove("<");
-                limitChars.Remove(">");
-            }
         }
 
-        public void updateHashLimitChar()
+        public void UpdateHashLimitChar()
         {
-            if (Settings1.Default.stopOnHash)
-            {
-                AddLimitChar("#");
+            if (Settings1.Default.SelectHash)
+            {                
+                limitChars.Remove("#");
             }
             else
             {
-                limitChars.Remove("#");
+                AddLimitChar("#");
             }
         }
 

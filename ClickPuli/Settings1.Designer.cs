@@ -26,204 +26,204 @@ namespace ClickPuli {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool stopOnUnderscore {
+        public bool SelectUnderscore {
             get {
-                return ((bool)(this["stopOnUnderscore"]));
+                return ((bool)(this["SelectUnderscore"]));
             }
             set {
-                this["stopOnUnderscore"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnColon {
-            get {
-                return ((bool)(this["stopOnColon"]));
-            }
-            set {
-                this["stopOnColon"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnSemicolon {
-            get {
-                return ((bool)(this["stopOnSemicolon"]));
-            }
-            set {
-                this["stopOnSemicolon"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnPeriod {
-            get {
-                return ((bool)(this["stopOnPeriod"]));
-            }
-            set {
-                this["stopOnPeriod"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnExclamationMark {
-            get {
-                return ((bool)(this["stopOnExclamationMark"]));
-            }
-            set {
-                this["stopOnExclamationMark"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnQuestionMark {
-            get {
-                return ((bool)(this["stopOnQuestionMark"]));
-            }
-            set {
-                this["stopOnQuestionMark"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnQuotes {
-            get {
-                return ((bool)(this["stopOnQuotes"]));
-            }
-            set {
-                this["stopOnQuotes"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnDoubleQuotes {
-            get {
-                return ((bool)(this["stopOnDoubleQuotes"]));
-            }
-            set {
-                this["stopOnDoubleQuotes"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnComma {
-            get {
-                return ((bool)(this["stopOnComma"]));
-            }
-            set {
-                this["stopOnComma"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnSquareBrackets {
-            get {
-                return ((bool)(this["stopOnSquareBrackets"]));
-            }
-            set {
-                this["stopOnSquareBrackets"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnParentheses {
-            get {
-                return ((bool)(this["stopOnParentheses"]));
-            }
-            set {
-                this["stopOnParentheses"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnBraces {
-            get {
-                return ((bool)(this["stopOnBraces"]));
-            }
-            set {
-                this["stopOnBraces"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnChevrons {
-            get {
-                return ((bool)(this["stopOnChevrons"]));
-            }
-            set {
-                this["stopOnChevrons"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnHash {
-            get {
-                return ((bool)(this["stopOnHash"]));
-            }
-            set {
-                this["stopOnHash"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool stopOnHyphen {
-            get {
-                return ((bool)(this["stopOnHyphen"]));
-            }
-            set {
-                this["stopOnHyphen"] = value;
+                this["SelectUnderscore"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool includeTrailingSpace {
+        public bool SelectColon {
             get {
-                return ((bool)(this["includeTrailingSpace"]));
+                return ((bool)(this["SelectColon"]));
             }
             set {
-                this["includeTrailingSpace"] = value;
+                this["SelectColon"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool autoCopy {
+        public bool SelectSemicolon {
             get {
-                return ((bool)(this["autoCopy"]));
+                return ((bool)(this["SelectSemicolon"]));
             }
             set {
-                this["autoCopy"] = value;
+                this["SelectSemicolon"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectPeriod {
+            get {
+                return ((bool)(this["SelectPeriod"]));
+            }
+            set {
+                this["SelectPeriod"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectExclamationMark {
+            get {
+                return ((bool)(this["SelectExclamationMark"]));
+            }
+            set {
+                this["SelectExclamationMark"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectQuestionMark {
+            get {
+                return ((bool)(this["SelectQuestionMark"]));
+            }
+            set {
+                this["SelectQuestionMark"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectQuotes {
+            get {
+                return ((bool)(this["SelectQuotes"]));
+            }
+            set {
+                this["SelectQuotes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectDoubleQuotes {
+            get {
+                return ((bool)(this["SelectDoubleQuotes"]));
+            }
+            set {
+                this["SelectDoubleQuotes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectComma {
+            get {
+                return ((bool)(this["SelectComma"]));
+            }
+            set {
+                this["SelectComma"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectSquareBrackets {
+            get {
+                return ((bool)(this["SelectSquareBrackets"]));
+            }
+            set {
+                this["SelectSquareBrackets"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectParentheses {
+            get {
+                return ((bool)(this["SelectParentheses"]));
+            }
+            set {
+                this["SelectParentheses"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectBraces {
+            get {
+                return ((bool)(this["SelectBraces"]));
+            }
+            set {
+                this["SelectBraces"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectChevrons {
+            get {
+                return ((bool)(this["SelectChevrons"]));
+            }
+            set {
+                this["SelectChevrons"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectHash {
+            get {
+                return ((bool)(this["SelectHash"]));
+            }
+            set {
+                this["SelectHash"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SelectHyphen {
+            get {
+                return ((bool)(this["SelectHyphen"]));
+            }
+            set {
+                this["SelectHyphen"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IncludeTrailingSpace {
+            get {
+                return ((bool)(this["IncludeTrailingSpace"]));
+            }
+            set {
+                this["IncludeTrailingSpace"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AutoCopy {
+            get {
+                return ((bool)(this["AutoCopy"]));
+            }
+            set {
+                this["AutoCopy"] = value;
             }
         }
     }

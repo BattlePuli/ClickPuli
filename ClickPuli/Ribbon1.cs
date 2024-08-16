@@ -11,28 +11,41 @@ namespace ClickPuli
     {
         private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
         {
-            // Populate the settings ribbon so that it mathces the stored settings.
+            // Update the UI and the internal vars based on the stored settings.
+            var addIn = Globals.ThisAddIn;
             cbStopOnUnderscore.Checked = Settings1.Default.stopOnUnderscore;
+            addIn.updateUnderscoreLimitChar();
             cbStopOnPeriod.Checked = Settings1.Default.stopOnPeriod;
+            addIn.updatePeriodLimitChar();
             cbStopOnComma.Checked = Settings1.Default.stopOnComma;
+            addIn.updateCommaLimitChar();
             cbStopOnSemicolon.Checked = Settings1.Default.stopOnSemicolon;
+            addIn.updateSemicolonLimitChar();
             cbStopOnExclamationMark.Checked = Settings1.Default.stopOnExclamationMark;
+            addIn.updateExclamationMarkLimitChar();
             cbStopOnQuestionMark.Checked = Settings1.Default.stopOnQuestionMark;
+            addIn.updateQuestionMarkLimitChar();
             cbStopOnHash.Checked = Settings1.Default.stopOnHash;
+            addIn.updateHashLimitChar();
             cbStopOnParentheses.Checked = Settings1.Default.stopOnParentheses;
+            addIn.updateParenthesisLimitChar();
             cbStopOnSquareBrackets.Checked = Settings1.Default.stopOnSquareBrackets;
+            addIn.updateSquareBracketsLimitChar();
             cbStopOnBraces.Checked = Settings1.Default.stopOnBraces;
+            addIn.updateBracesLimitChar();
             cbStopOnChevrons.Checked = Settings1.Default.stopOnChevrons;
+            addIn.updateChevronsLimitChar();
             cbStopOnQuotes.Checked = Settings1.Default.stopOnQuotes;
+            addIn.updateQuotesLimitChar();
             cbStopOnDoubleQuotes.Checked = Settings1.Default.stopOnDoubleQuotes;
+            addIn.updateDoubleQuotesLimitChar();
             cbStopOnHyphen.Checked = Settings1.Default.stopOnHyphen;
+            addIn.updateHyphenLimitChar();
             cbStopOnColon.Checked = Settings1.Default.stopOnColon;
+            addIn.updateColonLimitChar();
 
             cbIncludeTrailingSpace.Checked = Settings1.Default.includeTrailingSpace;
             cbAutoCopy.Checked = Settings1.Default.autoCopy;
-
-            var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
         }
 
         private void cbIncludeTrailingSpace_Click(object sender, RibbonControlEventArgs e)
@@ -52,7 +65,7 @@ namespace ClickPuli
             Settings1.Default.stopOnUnderscore = cbStopOnUnderscore.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateUnderscoreLimitChar();
         }
 
         private void cbStopOnColon_Click(object sender, RibbonControlEventArgs e)
@@ -60,7 +73,7 @@ namespace ClickPuli
             Settings1.Default.stopOnColon = cbStopOnColon.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateColonLimitChar();
         }
 
         private void cbStopOnComma_Click(object sender, RibbonControlEventArgs e)
@@ -68,7 +81,7 @@ namespace ClickPuli
             Settings1.Default.stopOnComma = cbStopOnComma.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateCommaLimitChar();
         }
 
         private void cbStopOnSemicolon_Click(object sender, RibbonControlEventArgs e)
@@ -76,7 +89,7 @@ namespace ClickPuli
             Settings1.Default.stopOnSemicolon = cbStopOnSemicolon.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateSemicolonLimitChar();
         }
 
         private void cbStopOnExclamationMark_Click(object sender, RibbonControlEventArgs e)
@@ -84,7 +97,7 @@ namespace ClickPuli
             Settings1.Default.stopOnExclamationMark = cbStopOnExclamationMark.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateExclamationMarkLimitChar();
         }
 
         private void cbStopOnHash_Click(object sender, RibbonControlEventArgs e)
@@ -92,7 +105,7 @@ namespace ClickPuli
             Settings1.Default.stopOnHash = cbStopOnHash.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateHashLimitChar();
         }
 
         private void cbStopOnParentheses_Click(object sender, RibbonControlEventArgs e)
@@ -100,7 +113,7 @@ namespace ClickPuli
             Settings1.Default.stopOnParentheses = cbStopOnParentheses.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateParenthesisLimitChar();
         }
 
         private void cbStopOnSquareBrackets_Click(object sender, RibbonControlEventArgs e)
@@ -108,7 +121,7 @@ namespace ClickPuli
             Settings1.Default.stopOnSquareBrackets = cbStopOnSquareBrackets.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateSquareBracketsLimitChar();
         }
 
         private void cbStopOnBraces_Click(object sender, RibbonControlEventArgs e)
@@ -116,7 +129,7 @@ namespace ClickPuli
             Settings1.Default.stopOnBraces = cbStopOnBraces.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateBracesLimitChar();
         }
 
         private void cbStopOnChevrons_Click(object sender, RibbonControlEventArgs e)
@@ -124,7 +137,7 @@ namespace ClickPuli
             Settings1.Default.stopOnChevrons = cbStopOnChevrons.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateChevronsLimitChar();
         }
 
         private void cbStopOnQuotes_Click(object sender, RibbonControlEventArgs e)
@@ -132,7 +145,7 @@ namespace ClickPuli
             Settings1.Default.stopOnQuotes = cbStopOnQuotes.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateQuotesLimitChar();
         }
 
         private void cbStopOnDoubleQuotes_Click(object sender, RibbonControlEventArgs e)
@@ -140,7 +153,7 @@ namespace ClickPuli
             Settings1.Default.stopOnDoubleQuotes = cbStopOnDoubleQuotes.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateDoubleQuotesLimitChar();
         }
 
         private void cbStopOnHyphen_Click(object sender, RibbonControlEventArgs e)
@@ -148,7 +161,7 @@ namespace ClickPuli
             Settings1.Default.stopOnHyphen = cbStopOnHyphen.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateHyphenLimitChar();
         }
 
         private void cbStopOnPeriod_Click(object sender, RibbonControlEventArgs e)
@@ -156,7 +169,7 @@ namespace ClickPuli
             Settings1.Default.stopOnPeriod = cbStopOnPeriod.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updatePeriodLimitChar();
         }
 
         private void cbStopOnQuestionMark_Click(object sender, RibbonControlEventArgs e)
@@ -164,7 +177,7 @@ namespace ClickPuli
             Settings1.Default.stopOnQuestionMark = cbStopOnQuestionMark.Checked;
             Settings1.Default.Save();
             var addIn = Globals.ThisAddIn;
-            addIn.UpdateLimitChars();
+            addIn.updateQuestionMarkLimitChar();
         }
 
         private void btnAbout_Click(object sender, RibbonControlEventArgs e)

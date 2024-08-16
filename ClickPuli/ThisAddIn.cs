@@ -29,7 +29,7 @@ namespace ClickPuli
         {
         }
 
-        private void AddLimitChar(string str)
+        public void AddLimitChar(string str)
         {
             if (!limitChars.Contains(str))
             {
@@ -58,9 +58,8 @@ namespace ClickPuli
             }
         }
 
-        public void UpdateLimitChars()
+        public void updateUnderscoreLimitChar()
         {
-            // Stop on underscore.
             if (Settings1.Default.stopOnUnderscore)
             {
                 AddLimitChar("_");
@@ -69,8 +68,10 @@ namespace ClickPuli
             {
                 limitChars.Remove("_");
             }
+        }
 
-            // Stop on colon.
+        public void updateColonLimitChar()
+        {
             if (Settings1.Default.stopOnColon)
             {
                 AddLimitChar(":");
@@ -79,8 +80,10 @@ namespace ClickPuli
             {
                 limitChars.Remove(":");
             }
+        }
 
-            // Stop on semicolon.
+        public void updateSemicolonLimitChar()
+        {
             if (Settings1.Default.stopOnSemicolon)
             {
                 AddLimitChar(";");
@@ -89,8 +92,10 @@ namespace ClickPuli
             {
                 limitChars.Remove(";");
             }
+        }
 
-            // Stop on period.
+        public void updatePeriodLimitChar()
+        {
             if (Settings1.Default.stopOnPeriod)
             {
                 AddLimitChar(".");
@@ -99,8 +104,10 @@ namespace ClickPuli
             {
                 limitChars.Remove(".");
             }
+        }
 
-            // Stop on comma.
+        public void updateCommaLimitChar()
+        {
             if (Settings1.Default.stopOnComma)
             {
                 AddLimitChar(",");
@@ -109,8 +116,10 @@ namespace ClickPuli
             {
                 limitChars.Remove(",");
             }
+        }
 
-            // Stop on exclamation-mark.
+        public void updateExclamationMarkLimitChar()
+        {
             if (Settings1.Default.stopOnExclamationMark)
             {
                 AddLimitChar("!");
@@ -119,8 +128,10 @@ namespace ClickPuli
             {
                 limitChars.Remove("!");
             }
+        }
 
-            // Stop on question-mark.
+        public void updateQuestionMarkLimitChar()
+        {
             if (Settings1.Default.stopOnQuestionMark)
             {
                 AddLimitChar("?");
@@ -129,8 +140,10 @@ namespace ClickPuli
             {
                 limitChars.Remove("?");
             }
+        }
 
-            // Stop on hyphen.
+        public void updateHyphenLimitChar()
+        {
             if (Settings1.Default.stopOnHyphen)
             {
                 AddLimitChar("-");
@@ -139,8 +152,10 @@ namespace ClickPuli
             {
                 limitChars.Remove("-");
             }
+        }
 
-            // Stop on quotes.
+        public void updateQuotesLimitChar()
+        {
             if (Settings1.Default.stopOnQuotes)
             {
                 AddLimitChar("\'");
@@ -151,8 +166,10 @@ namespace ClickPuli
                 limitChars.Remove("\'");
                 limitChars.Remove("’");
             }
+        }
 
-            // Stop on doublequotes.
+        public void updateDoubleQuotesLimitChar()
+        {
             if (Settings1.Default.stopOnDoubleQuotes)
             {
                 AddLimitChar("\"");
@@ -165,8 +182,10 @@ namespace ClickPuli
                 limitChars.Remove("“");
                 limitChars.Remove("”");
             }
+        }
 
-            // Stop on parenteses.
+        public void updateParenthesisLimitChar()
+        {
             if (Settings1.Default.stopOnParentheses)
             {
                 AddLimitChar("(");
@@ -177,8 +196,10 @@ namespace ClickPuli
                 limitChars.Remove("(");
                 limitChars.Remove(")");
             }
+        }
 
-            // Stop on squarebrackets.
+        public void updateSquareBracketsLimitChar()
+        {
             if (Settings1.Default.stopOnSquareBrackets)
             {
                 AddLimitChar("[");
@@ -189,8 +210,10 @@ namespace ClickPuli
                 limitChars.Remove("[");
                 limitChars.Remove("]");
             }
+        }
 
-            // Stop on braces.
+        public void updateBracesLimitChar()
+        {
             if (Settings1.Default.stopOnBraces)
             {
                 AddLimitChar("{");
@@ -201,8 +224,10 @@ namespace ClickPuli
                 limitChars.Remove("{");
                 limitChars.Remove("}");
             }
+        }
 
-            // Stop on chevrons.
+        public void updateChevronsLimitChar()
+        {
             if (Settings1.Default.stopOnChevrons)
             {
                 AddLimitChar("<");
@@ -213,8 +238,10 @@ namespace ClickPuli
                 limitChars.Remove("<");
                 limitChars.Remove(">");
             }
+        }
 
-            // Stop on hash.
+        public void updateHashLimitChar()
+        {
             if (Settings1.Default.stopOnHash)
             {
                 AddLimitChar("#");

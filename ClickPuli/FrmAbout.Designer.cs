@@ -97,7 +97,7 @@
             // 
             // btnShowHelp
             // 
-            this.btnShowHelp.BackgroundImage = global::ClickPuli.Properties.Resources.license_tiny;
+            this.btnShowHelp.BackgroundImage = global::ClickPuli.Properties.Resources.help_tiny;
             this.btnShowHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowHelp.Location = new System.Drawing.Point(646, 348);
             this.btnShowHelp.Name = "btnShowHelp";
@@ -108,7 +108,7 @@
             // 
             // btnShowLicense
             // 
-            this.btnShowLicense.BackgroundImage = global::ClickPuli.Properties.Resources.help_tiny;
+            this.btnShowLicense.BackgroundImage = global::ClickPuli.Properties.Resources.license_tiny;
             this.btnShowLicense.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShowLicense.Location = new System.Drawing.Point(709, 348);
             this.btnShowLicense.Name = "btnShowLicense";

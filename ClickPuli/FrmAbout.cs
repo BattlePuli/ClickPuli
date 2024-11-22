@@ -32,7 +32,7 @@ namespace ClickPuli
         private void FrmAbout_Load(object sender, EventArgs e)
         {
             //string version = System.Windows.Forms.Application.ProductVersion;
-            string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            string version = Assembly.GetExecutingAssembly().GetName().Version.ToString(3);
             lblAboutVersion.Text = String.Format("Version: {0}", version);
         }
 

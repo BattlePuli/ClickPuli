@@ -1,5 +1,3 @@
-This is the first beta. It contains all the (very simple) functionality. In case of a bug or suggestion please leave a note.
-
 ## Installation
 
 Download the latest release zip file, unpack it and run the setup.exe found within. Don’t be alarmed if you run into a screen like this:
